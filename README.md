@@ -31,7 +31,7 @@ Mu and Sigma parameter of the Lognormal distribution can be defined with the opt
 **Example:**  
 ```python3 CommunityReadSimulator.py -numReads 10000 -path_to_gens genomes/ -path_to_ART_illumina art_illumina_linux64 -output_folder example_output -p 3 -distribution exponential -mu 1```
 
-The user can provide a fixed relative abundance distribution with the option ```-abundances```. The argument of this file is a text file where each line lists a fasta file and, tab-separated, the corresponding **percent** relative abundance. An example file is given in this repository (predefined_rel_abundances.tsv).  
+The user can provide a fixed relative abundance distribution with the option ```-abundances```. The argument of this file is a text file where each line lists a fasta file and, tab-separated, the corresponding **percent** relative abundance. The relative abundance values listed in this file should sum to 100. An example file is given in this repository (predefined_rel_abundances.tsv).  
 **Example:**  
 ```python3 CommunityReadSimulator.py -numReads 10000 -path_to_gens genomes/ -path_to_ART_illumina art_illumina_linux64 -output_folder example_output -p 3 -abundances predefined_rel_abundances.tsv```
 ### ART Illumina parameters
