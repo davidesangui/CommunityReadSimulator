@@ -25,13 +25,13 @@ The data in this repository will be used as example. An example output is stored
 ## Advanced usage
 ### Abundance distribution
 Relative abundance profiles can be sampled from four different distributions: Lognormal, Exponential, Uniform, Equal.  
-If "Equal" distirbution is selected, then each genome will have the same relative abundance, i.e., if there are three genomes, then each will have abundance equal to 1/3.  
+If "Equal" distribution is selected, then each genome will have the same relative abundance, i.e., if there are three genomes, then each will have abundance equal to 1/3.  
 The distribution can be defined with the option ```-distribution```. The default distribution is Lognormal, which is typically fitted by microbial abundance distirbutions in real communities. 
 Mu and Sigma parameter of the Lognormal distribution can be defined with the options ```-mu``` and ```-sigma```. When the Exponential distribution is selected, then ```-mu``` option defines the lambda parameter of the Exponential distribution. In this case ```-sigma``` option is irrelevant. For all other distributions, the options ```-mu``` and ```-sigma```are irrelevant.  
 **Example:**  
 ```python3 CommunityReadSimulator.py -numReads 10000 -path_to_gens genomes/ -path_to_ART_illumina art_illumina_linux64 -output_folder example_output -p 3 -distribution exponential -mu 1```
 
-The user can provide a fixed relative abundance distribution with the option ```-abundances```. The argument of this file is a text file where each line lists a fasta file and, tab-separated, the corresponding **percent** relative abundance. The relative abundance values listed in this file should sum to 100. An example file is given in this repository (predefined_rel_abundances.tsv).  
+The user can provide a fixed relative abundance distribution with the option ```-abundances```. The argument of this option is a text file where each line lists a fasta file and, tab-separated, the corresponding **percent** relative abundance. The relative abundance values listed in this file should sum to 100. An example file is given in this repository (predefined_rel_abundances.tsv).  
 **Example:**  
 ```python3 CommunityReadSimulator.py -numReads 10000 -path_to_gens genomes/ -path_to_ART_illumina art_illumina_linux64 -output_folder example_output -p 3 -abundances predefined_rel_abundances.tsv```
 ### ART Illumina parameters
