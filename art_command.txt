@@ -1,0 +1,1 @@
+/data/users/sofia/CAMISIM/tools/art_illumina-2.3.6/art_illumina -p -l 250 -m 2000 -s 100 
