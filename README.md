@@ -1,7 +1,7 @@
 # CommunityReadSimulator
 Simple script to generate paired-end shotgun metagenomic sequencing reads from a set of genomes representing a microbial community.
 ## Installation
-To use CommunityReadSimulator, simply download the file CommunityReadSimulator.py from this repository and launch it with Python3. The art_illumina executable is also required, which can be obtained from this repository (linux64 version) or from https://www.niehs.nih.gov/research/resources/software/biostatistics/art.  
+To use CommunityReadSimulator, simply download the file CommunityReadSimulator.py from this repository and run it with Python3. The art_illumina executable is also required, which can be obtained from this repository (linux64 version) or from https://www.niehs.nih.gov/research/resources/software/biostatistics/art.  
 The script requires numpy, which can be obtained via pip:
 ```
 pip install numpy
