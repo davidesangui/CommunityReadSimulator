@@ -11,7 +11,7 @@ CommunityReadSimulator is essentially a wrapper of ART Illumina read simulator:
 (Weichun Huang, Leping Li, Jason R Myers, and Gabor T Marth. ART: a next-generation sequencing read simulator, Bioinformatics (2012) 28 (4): 593-594).  
 Given a set of genomes in fasta format, a relative abundance profile is sampled from a user-defined distribution and paired-end sequencing reads are generated with art_illumina from each genome, according to the relative abundance profile and the desired total number of reads.
 When multiple cores are available, sequencing reads can be generated from different genomes in parallel.  
-The output consists of two fastq files (forward and reverse reads) and an alignment file (.aln format) which are obtained through the concatenation of the genome-level art_illumina outputs. Moreover, also the ground truth relative abundances are given as output.
+The output consists of two fastq files (forward and reverse reads) and two alignment files (.aln format and SAM format) which are obtained through the concatenation of the genome-level art_illumina outputs. Moreover, also the ground truth relative abundances are given as output.
 ## Usage
 CommunityReadSimulator.py requires four mandatory arguments:
 - ```-numReads```: (approximately) the total number of reads that will be generated in the simulated metagenome
